@@ -7,7 +7,7 @@ const AQIPage = async ({
   searchParams: { latitude, longitude },
 }) => {
   const { lat, lon } = await getResolvedLatLong(location, latitude, longitude);
-  await delay(2800);
+  await delay(2000);
   return <AQI lat={lat} lon={lon} />;
 };
 

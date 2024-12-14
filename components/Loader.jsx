@@ -84,7 +84,7 @@ const Loader = ({ name }) => {
           ></line>
         </svg>
         <span className="text-3xl font-medium text-gray-500">
-          Loading <span className="fw-bold">{name}</span>...
+          Loading <span className="fw-bold">{name || ""}</span>...
         </span>
       </div>
     </>

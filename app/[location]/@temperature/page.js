@@ -7,7 +7,7 @@ export default async function PageTemperature({
   searchParams: { latitude, longitude },
 }) {
   const { lat, lon } = await getResolvedLatLong(location, latitude, longitude);
-  await delay(1000);
+  await delay(500);
   return (
     <>
       <Temperature lat={lat} lon={lon} />

@@ -32,7 +32,7 @@ const LocationDetectorContent = () => {
               alt="Loading..."
               height={500}
               width={500}
-              className="border rounded-md my-4"
+              className="border rounded-md my-4 w-44 h-48"
             />
             <p className="text-4xl text-center">Detecting Location...</p>
           </>
