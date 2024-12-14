@@ -7,7 +7,7 @@ export default async function PageWind({
   searchParams: { longitude, latitude },
 }) {
   const { lat, lon } = await getResolvedLatLong(location, latitude, longitude);
-  await delay(800);
+  await delay(900);
 
   return (
     <>

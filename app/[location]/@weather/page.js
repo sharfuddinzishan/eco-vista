@@ -7,7 +7,7 @@ export default async function PageWeather({
   searchParams: { latitude, longitude },
 }) {
   const { lat, lon } = await getResolvedLatLong(location, latitude, longitude);
-  await delay(1400);
+  await delay(700);
 
   return (
     <>
