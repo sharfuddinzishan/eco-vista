@@ -15,11 +15,13 @@
   .bg-img {
     @apply absolute left-0 right-0 top-0 z-10 h-[70vh] w-full object-cover max-lg:fixed max-lg:h-screen;
   }
+
   .overlay {
-    @apply absolute left-0 right-0 top-0 z-20 h-[70vh] w-full bg-[url('./assets/images/gradient.png')] bg-cover bg-center bg-left-top bg-no-repeat max-lg:fixed max-lg:h-screen;
+    @apply absolute left-0 right-0 top-0 z-20 h-[70vh] w-full bg-[url('/assets/images/gradient.png')] bg-cover bg-center bg-no-repeat max-lg:fixed max-lg:h-screen;
   }
   .card {
-    @apply relative h-full min-h-[290px] max-w-full rounded-2xl bg-[#293A4E] p-5 text-white;
+    @apply relative h-full min-h-[230px] max-w-full rounded-2xl bg-[#293A4E] py-2 px-5 text-white;
+    opacity: 0.9;
   }
   .feature-name {
     @apply text-sm font-medium text-[#7887A2] lg:text-base;
