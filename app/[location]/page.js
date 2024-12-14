@@ -6,7 +6,6 @@ export default async function PageLocation({
   searchParams: { latitude, longitude },
 }) {
   const { lat, lon } = await getResolvedLatLong(location, latitude, longitude);
-
   return (
     <>
       <LocationInfo location={location} lat={lat} lon={lon} />

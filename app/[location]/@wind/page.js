@@ -1,4 +1,5 @@
 import Wind from "@/components/Wind";
+import { delay } from "@/libs/delay";
 import { getResolvedLatLong } from "@/libs/location-info";
 
 export default async function PageWind({
@@ -6,6 +7,7 @@ export default async function PageWind({
   searchParams: { longitude, latitude },
 }) {
   const { lat, lon } = await getResolvedLatLong(location, latitude, longitude);
+  await delay(2000);
 
   return (
     <>

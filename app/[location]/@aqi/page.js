@@ -1,4 +1,5 @@
 import AQI from "@/components/AQI";
+import { delay } from "@/libs/delay";
 import { getResolvedLatLong } from "@/libs/location-info";
 
 const AQIPage = async ({
@@ -6,6 +7,7 @@ const AQIPage = async ({
   searchParams: { latitude, longitude },
 }) => {
   const { lat, lon } = await getResolvedLatLong(location, latitude, longitude);
+  await delay(2800);
   return <AQI lat={lat} lon={lon} />;
 };
 

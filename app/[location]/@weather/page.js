@@ -1,4 +1,5 @@
 import Weather from "@/components/Weather";
+import { delay } from "@/libs/delay";
 import { getResolvedLatLong } from "@/libs/location-info";
 
 export default async function PageWeather({
@@ -6,6 +7,7 @@ export default async function PageWeather({
   searchParams: { latitude, longitude },
 }) {
   const { lat, lon } = await getResolvedLatLong(location, latitude, longitude);
+  await delay(2400);
 
   return (
     <>
