@@ -24,7 +24,7 @@ const LocationSwitcher = () => {
       setFilteredLocations(locations);
     } else {
       setFilteredLocations(
-        locations.filter((location) =>
+        locations?.filter((location) =>
           location.location.toLowerCase().includes(searchTerm.toLowerCase())
         )
       );
